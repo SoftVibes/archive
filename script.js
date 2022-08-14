@@ -11,12 +11,23 @@ function alignButtons () {
     }
 }
 
+function assignUrls () {
+    buttons = document.getElementsByClassName('button');
+    for (var i = 0; i < buttons.length; i++) {
+        url = buttons[i].getAttribute('url');
+        buttons[i].onclick = function () {
+            window.location.href = url;
+        }
+    }
+}
+
 function scrollToTop() {
     document.getElementById('container').scrollTop = 0;
 }
 
 function afterLoad() {
     alignButtons();
+    assignUrls();
     document.getElementById('container').onscroll = function () {
         if (document.getElementById('container').scrollTop > 500) {
             document.getElementById('top').style.display = 'block';
