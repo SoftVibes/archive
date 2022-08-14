@@ -14,10 +14,9 @@ function alignButtons () {
 function assignUrls () {
     buttons = document.getElementsByClassName('button');
     for (var i = 0; i < buttons.length; i++) {
-        url = buttons[i].getAttribute('url');
-        buttons[i].onclick = function () {
-            window.location.href = url;
-        }
+        buttons[i].addEventListener('click', function () {
+            window.location.href = this.getAttribute('url');
+        });
     }
 }
 
