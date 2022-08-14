@@ -14,19 +14,28 @@
     <div id="container">
         <button id="top" onclick="scrollToTop();"><img src="src/up.svg" id="img-top"></button>
         <p id="heading">Archive</p>
-        <p id="desc">an archive of all the resources that I frequently need</p>
+        <p id="desc">a collection of all the resources that I frequently need</p>
         <div id="items">
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
+            <select name="sort" id="sort">
+                <option value="all">All</option>
+                <option value="page">Pages</option>
+                <option value="css">CSS</option>
+                <option value="font">Fonts</option>
+                <option value="image">Images</option>
+                <option value="cdn">CDNs</option>
+                <option value="link">Links</option>
+            </select>
+            <div class="button" type="page"></div>
+            <div class="button" type="page"></div>
+            <div class="button" type="css"></div>
+            <div class="button" type="font"></div>
+            <div class="button" type="image"></div>
+            <div class="button" type="font"></div>
+            <div class="button" type="page"></div>
+            <div class="button" type="link"></div>
+            <div class="button" type="cdn"></div>
+            <div class="button" type="cdn"></div>
+            <div class="button" type="font"></div>
         </div>
     </div>
 </body>

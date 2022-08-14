@@ -53,6 +53,29 @@ body {
     flex-wrap: wrap;
 }
 
+#sort {
+    background-color: #171c24;
+    border: 2px solid white;
+    border-radius: .5rem;
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    margin: 0 calc(100vw - 15rem) 5rem 5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+#sort:hover {
+    background-color: #242c38;
+}
+
+#sort option {
+    background-color: #222831;
+    font-weight: 700;
+}
+
 .button {
     width: 35rem;
     height: 20rem;

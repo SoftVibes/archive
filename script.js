@@ -24,4 +24,19 @@ function afterLoad() {
             document.getElementById('top').style.display = 'none';
         }
     }
+
+    setInterval(function () {
+        sort = document.getElementById('sort').value;
+        buttons = document.getElementsByClassName('button');
+
+        for (var i = 0; i < buttons.length; i++) {
+            if (sort == 'all') {
+                buttons[i].style.display = 'block';
+            } else if (sort == buttons[i].getAttribute('type')) {
+                buttons[i].style.display = 'block';
+            } else {
+                buttons[i].style.display = 'none';
+            }
+        }
+    }, 100);
 }
