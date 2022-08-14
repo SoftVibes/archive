@@ -2,7 +2,7 @@ function alignButtons () {
     buttons = document.getElementsByClassName('button');
     for (var i = 0; i < buttons.length; i++) {
         if ((i+1) % 4 == 2) {
-            buttons[i].style.marginLeft = 'calc(((100vw - 70rem)/3) + 3.5rem)';
+            buttons[i].style.marginLeft = 'calc(((100vw - 70rem)/4) + 3.5rem)';
         }
         if ((i+1) % 4 == 3) {
             buttons[i].style.marginLeft = 'calc(((100vw - 70rem)/3) - 3.5rem)';
