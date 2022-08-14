@@ -82,7 +82,7 @@ body {
     background-color: #171c24;
     border: 2px solid #FFFFFF;
     border-radius: .5rem;
-    margin-left: calc((100vw - 70rem)/3);
+    margin-left: calc((100vw - 70rem)/4);
     margin-bottom: 5rem;
     cursor: pointer;
 
