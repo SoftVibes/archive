@@ -1,12 +1,27 @@
 function alignButtons () {
     buttons = document.getElementsByClassName('button');
     for (var i = 0; i < buttons.length; i++) {
-        if ((+1) % 2 == 1 && (i+1) % 4 != 0) {
-            buttons[i].style.marginLeft = 'calc(((100vw - 70rem)/3) + 15px)';
+        if ((i+1) % 4 == 2) {
+            buttons[i].style.marginLeft = 'calc(((100vw - 70rem)/3) + 3.5rem)';
+        }
+        if ((i+1) % 4 == 3) {
+            buttons[i].style.marginLeft = 'calc(((100vw - 70rem)/3) - 3.5rem)';
+            buttons[i].style.marginRight = '3.5rem';
         }
     }
 }
 
+function scrollToTop() {
+    document.getElementById('container').scrollTop = 0;
+}
+
 function afterLoad() {
     alignButtons();
+    document.getElementById('container').onscroll = function () {
+        if (document.getElementById('container').scrollTop > 500) {
+            document.getElementById('top').style.display = 'block';
+        } else {
+            document.getElementById('top').style.display = 'none';
+        }
+    }
 }

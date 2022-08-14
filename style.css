@@ -22,6 +22,19 @@ body {
     display: none;
 }
 
+#top {
+    width: 1rem;
+    height: 1rem;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
 #heading {
     font-size: 2.5rem;
     margin: 2rem 0 0 2rem;
